@@ -1,3 +1,6 @@
+.vagrant
+puphet/files/dot/ssh
+
 # Cache and logs (Symfony2)
 /app/cache/*
 /app/logs/*
