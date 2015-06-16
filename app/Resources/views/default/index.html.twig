@@ -1,5 +1,22 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    Homepage.
+
+    <h1>Blog</h1>
+
+    <ul>
+        {% for post in posts %}
+            <li>
+                <h2>{{ post.title }}</h2>
+                <p>
+                    {{ post.text }}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
+
 {% endblock %}
